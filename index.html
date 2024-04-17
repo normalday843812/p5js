@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pulsar P5.js</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <br>
+  <div id="pulsar">
+    <div>
+      <label for="oscillationSpeed">Oscillation Speed:</label>
+      <input type="range" id="oscillationSpeed" name="oscillationSpeed" min="0" max="10" step="0.1" value="0.75">
+      <label for="maxRotation">Max Rotation:</label>
+      <input type="range" id="maxRotation" name="maxRotation" min="0" max="70" value="10">
+      <label for="rayLength">Ray Length:</label>
+      <input type="range" id="rayLength" name="rayLength" min="100" max="1000" value="560">
+      <label for="coreSize">Core Size:</label>
+      <input type="range" id="coreSize" name="coreSize" min="0" max="100" value="50">
+      <label for="centerX">Center X:</label>
+      <input type="number" id="centerX" name="centerX" min="0" max="1000" value="400">
+      <label for="centerY">Center Y:</label>
+      <input type="number" id="centerY" name="centerY" min="0" max="800" value="400">
+      <label for="rayWidth">Ray Width:</label>
+      <input type="range" id="rayWidth" name="rayWidth" min="0" max="20" value="8">
+      <label for="motionBlurAmount">Motion Blur Amount:</label>
+      <input type="range" id="motionBlurAmount" name="motionBlurAmount" min="0" max="2000" value="1000">
+      <label for="coreOscillationSpeed">Core Oscillation Speed:</label>
+      <input type="range" id="coreOscillationSpeed" name="coreOscillationSpeed" min="0" max="10" value="5">
+      <label for="rotationOffset">Rotation Offset:</label>
+      <input type="range" id="rotationOffset" name="rotationOffset" min="0" max="3.14" value="2.8" step="0.01">
+      <button id="reset">Reset to Defaults</button>
+    </div>
+  </div>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
